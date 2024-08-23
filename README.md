@@ -64,5 +64,5 @@ The project architecture consists of several stages:
 This project showcases an end-to-end data engineering pipeline on Azure, from data ingestion and transformation to loading and reporting. It also highlights the importance of security and monitoring using Azure's native tools. The final product is a set of dynamic Power BI dashboards that provide valuable business insights.
 
 ## References
-- Mr. K Talks Tech. *"E2E Azure Data Engineering Project"* [YouTube Video](https://www.youtube.com/watch?v=iQ41WqhHglk&t=3624s)
+- Mr. K Talks Tech. *"E2E Azure Data Engineering Project"* [YouTube Channel "Mr. K Talks Tech"](https://www.youtube.com/watch?v=iQ41WqhHglk&t=3624s)
 
