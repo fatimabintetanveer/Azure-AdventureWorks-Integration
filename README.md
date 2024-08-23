@@ -22,7 +22,7 @@ This project demonstrates a comprehensive data engineering pipeline built on Azu
 ## Project Architecture
 The project architecture consists of several stages:
 
-![AdventureWorks Architecture]('assets/architecture.png')
+![AdventureWorks Architecture](assets/architecture.png)
 
 ## Implementation Steps
 ### Part 1: Data Ingestion
