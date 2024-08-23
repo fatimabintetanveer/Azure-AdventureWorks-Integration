@@ -27,21 +27,38 @@ The project architecture consists of several stages:
 ## Implementation Steps
 ### Part 1: Data Ingestion
 1. **Restore AdventureWorksLT2022 Database**: Restore the database from a .bak file on the on-premise SQL Server.
+
+![Restore Database](assets/restore-database.png)
+
 2. **Set Up Integration Runtime**: Install and configure the Microsoft Integration Runtime to connect the on-premise SQL Server to Azure.
+
+![Integration Runtime](assets/integrationruntime.png)
+
 3. **Create ADF Copy Pipeline**: Set up a pipeline in Azure Data Factory to copy data from the on-premise SQL Server to Azure Data Lake Storage Gen2, storing it in Parquet format.
+
+![ADF pipeline](assets/data-ingestion.png)
 
 ### Part 2: Data Transformation
 1. **Mount ADLS in Databricks**: Mount the Azure Data Lake Storage to Databricks for data access.
+
+![Storage Mount](assets/storagemnt.png)
+
 2. **Bronze to Silver Transformation**: Clean the data and apply attribute type changes, saving the output to the Silver folder.
 3. **Silver to Gold Transformation**: Apply consistent naming conventions and save the final data in the Gold folder in Delta format.
+
+![ADB pipeline](assets/databricks-pipeline.png)
 
 ### Part 3: Data Loading
 1. **Load Data into Synapse**: Use Azure Synapse Analytics to efficiently load and manage the cleaned data.
 2. **Execute Stored Procedure**: Run a stored procedure in Azure Synapse to create or update views in the Azure SQL Database.
 
+![AS pipeline](assets/views-pipeline.png)
+
 ### Part 4: Data Reporting
 1. **Connect Power BI to Synapse**: Set up a DirectQuery connection between Power BI and Azure Synapse to create real-time, interactive dashboards.
 2. **Build Dashboards**: Create insightful visualizations to analyze sales data by product category, country, and customer demographics.
+
+![AW Dashboard](assets/adventureworks-dashboard.png)
 
 ## Conclusion
 This project showcases an end-to-end data engineering pipeline on Azure, from data ingestion and transformation to loading and reporting. It also highlights the importance of security and monitoring using Azure's native tools. The final product is a set of dynamic Power BI dashboards that provide valuable business insights.
