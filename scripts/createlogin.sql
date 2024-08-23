@@ -1,0 +1,2 @@
+CREATE LOGIN fatima WITH PASSWORD = 'Gw@270834-----'
+CREATE USER fatima FOR LOGIN fatima
