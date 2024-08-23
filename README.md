@@ -22,7 +22,7 @@ This project demonstrates a comprehensive data engineering pipeline built on Azu
 ## Project Architecture
 The project architecture consists of several stages:
 
-![AdventureWorks Architecture]('d:\Data Engineering\powerbi\architecture.png')
+![AdventureWorks Architecture]('d:/Data Engineering/powerbi/architecture.png')
 
 ### 1. Data Ingestion
 - **Restore AdventureWorksLT2017 Database**: The initial step involves restoring the AdventureWorksLT2017 database from a .bak file.
